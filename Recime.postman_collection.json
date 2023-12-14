@@ -1,0 +1,458 @@
+{
+	"info": {
+		"_postman_id": "15f351c6-c943-4d45-a2c2-0a2cd37b2ad1",
+		"name": "Recime",
+		"description": "Coding challenge for ReciMe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8360539"
+	},
+	"item": [
+		{
+			"name": "Recipes",
+			"item": [
+				{
+					"name": "Recipes by difficulty",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/recime/api/v1/recipes/trending/filter?difficulty=easy",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"recime",
+								"api",
+								"v1",
+								"recipes",
+								"trending",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "difficulty",
+									"value": "easy"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "EASY",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/recime/api/v1/recipes/trending/filter?difficulty=easy",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"recime",
+										"api",
+										"v1",
+										"recipes",
+										"trending",
+										"filter"
+									],
+									"query": [
+										{
+											"key": "difficulty",
+											"value": "easy"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Dec 2023 10:24:05 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Wagyu Burger\",\n        \"position\": 15,\n        \"difficulty\": \"EASY\",\n        \"imageUrl\": \" https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Chicken Burger\",\n        \"position\": 3,\n        \"difficulty\": \"EASY\",\n        \"imageUrl\": \"https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg\"\n    }\n]"
+						},
+						{
+							"name": "Medium",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/recime/api/v1/recipes/trending/filter?difficulty=medium",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"recime",
+										"api",
+										"v1",
+										"recipes",
+										"trending",
+										"filter"
+									],
+									"query": [
+										{
+											"key": "difficulty",
+											"value": "medium"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Dec 2023 10:24:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Cheese Burger\",\n        \"position\": 10,\n        \"difficulty\": \"MEDIUM\",\n        \"imageUrl\": \"https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Breakfast Burger\",\n        \"position\": 1,\n        \"difficulty\": \"MEDIUM\",\n        \"imageUrl\": \"https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg\"\n    }\n]"
+						},
+						{
+							"name": "Hard",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/recime/api/v1/recipes/trending/filter?difficulty=hard",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"recime",
+										"api",
+										"v1",
+										"recipes",
+										"trending",
+										"filter"
+									],
+									"query": [
+										{
+											"key": "difficulty",
+											"value": "hard"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Dec 2023 10:25:43 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"name\": \"Bacon Burger\",\n        \"position\": 4,\n        \"difficulty\": \"HARD\",\n        \"imageUrl\": \"https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg\"\n    }\n]"
+						},
+						{
+							"name": "Unsupported difficulty",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/recime/api/v1/recipes/trending/filter?difficulty=normal",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"recime",
+										"api",
+										"v1",
+										"recipes",
+										"trending",
+										"filter"
+									],
+									"query": [
+										{
+											"key": "difficulty",
+											"value": "normal"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Dec 2023 10:26:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"BAD_REQUEST\",\n    \"message\": \"Difficulty param accepts [EASY, MEDIUM, HARD].\",\n    \"title\": \"Oops!\"\n}"
+						},
+						{
+							"name": "Missing difficulty param",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/recime/api/v1/recipes/trending/filter",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"recime",
+										"api",
+										"v1",
+										"recipes",
+										"trending",
+										"filter"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Dec 2023 10:26:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"BAD_REQUEST\",\n    \"message\": \"A difficulty is required for filtering trending recipes.\",\n    \"title\": \"Oops!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "All Recipes by order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/recime/api/v1/recipes/trending",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"recime",
+								"api",
+								"v1",
+								"recipes",
+								"trending"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/recime/api/v1/recipes/trending/filter?difficulty=easy",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"recime",
+										"api",
+										"v1",
+										"recipes",
+										"trending",
+										"filter"
+									],
+									"query": [
+										{
+											"key": "difficulty",
+											"value": "easy"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Dec 2023 10:27:58 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Wagyu Burger\",\n        \"position\": 15,\n        \"difficulty\": \"EASY\",\n        \"imageUrl\": \" https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Cheese Burger\",\n        \"position\": 10,\n        \"difficulty\": \"MEDIUM\",\n        \"imageUrl\": \"https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Bacon Burger\",\n        \"position\": 4,\n        \"difficulty\": \"HARD\",\n        \"imageUrl\": \"https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Chicken Burger\",\n        \"position\": 3,\n        \"difficulty\": \"EASY\",\n        \"imageUrl\": \"https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Breakfast Burger\",\n        \"position\": 1,\n        \"difficulty\": \"MEDIUM\",\n        \"imageUrl\": \"https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg\"\n    }\n]"
+						}
+					]
+				}
+			],
+			"description": "Collection of APIs for Recipe Resource"
+		},
+		{
+			"name": "Ingredients",
+			"item": [
+				{
+					"name": "Get ingredients by Recipe ID",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Get Ingredient by recipe ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/recime/api/v1/ingredients/recipes/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"recime",
+										"api",
+										"v1",
+										"ingredients",
+										"recipes",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Dec 2023 11:20:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Burger Bun\",\n        \"quantity\": 1,\n        \"unit\": \"pc\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Lettuce\",\n        \"quantity\": 1,\n        \"unit\": \"pc\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Onions\",\n        \"quantity\": 0.25,\n        \"unit\": \"cup\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Ground Wagyu Beef\",\n        \"quantity\": 0.25,\n        \"unit\": \"lbs\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}
